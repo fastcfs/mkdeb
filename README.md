@@ -10,3 +10,7 @@ rpm -ql libfastcommon
 /home/fastcfs/git/libfastcommon-1.0.50
 /home/fastcfs/git/libfastcommon-1.0.50/debian
 ```
+
+```shell script
+https://unix.stackexchange.com/questions/592349/how-to-include-and-install-debian-package-timer-file-inside-deblan-package-alon#
+```
