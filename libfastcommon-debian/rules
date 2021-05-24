@@ -24,4 +24,4 @@
 #	dh_auto_configure -- #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
 
 override_dh_auto_install:
-	install -D -m 755 src/libfastcommon.so /usr/lib64/libfastcommon.so
+	install -D -m 755 src/libfastcommon.so debian/anacron/usr/lib64/libfastcommon.so
