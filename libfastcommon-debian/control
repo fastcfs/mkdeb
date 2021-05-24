@@ -1,7 +1,7 @@
 Source: libfastcommon
-Section: unknown
+Section: zhangchunsheng
 Priority: optional
-Maintainer: unknown <zhangchunsheng423@gmail.com>
+Maintainer: zhangchunsheng <zhangchunsheng423@gmail.com>
 Build-Depends: debhelper-compat (= 12)
 Standards-Version: 4.4.1
 Homepage: <insert the upstream URL, if relevant>

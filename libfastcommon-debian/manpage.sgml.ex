@@ -25,7 +25,7 @@ manpage.1: manpage.sgml
        allowed: see man(7), man(1). -->
   <!ENTITY dhsection   "<manvolnum>SECTION</manvolnum>">
   <!ENTITY dhemail     "<email>zhangchunsheng423@gmail.com</email>">
-  <!ENTITY dhusername  "unknown">
+  <!ENTITY dhusername  "zhangchunsheng">
   <!ENTITY dhucpackage "<refentrytitle>Libfastcommon</refentrytitle>">
   <!ENTITY dhpackage   "libfastcommon">
 

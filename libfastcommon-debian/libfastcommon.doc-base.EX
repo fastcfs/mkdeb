@@ -4,7 +4,7 @@ Author: <insert document author here>
 Abstract: This manual describes what libfastcommon is
  and how it can be used to
  manage online manuals on Debian systems.
-Section: unknown
+Section: zhangchunsheng
 
 Format: debiandoc-sgml
 Files: /usr/share/doc/libfastcommon/libfastcommon.sgml.gz

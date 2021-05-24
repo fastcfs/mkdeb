@@ -24,7 +24,7 @@ case "$1" in
     ;;
 
     *)
-        echo "postrm called with unknown argument \`$1'" >&2
+        echo "postrm called with zhangchunsheng argument \`$1'" >&2
         exit 1
     ;;
 esac

@@ -26,7 +26,7 @@ case "$1" in
     ;;
 
     *)
-        echo "postinst called with unknown argument \`$1'" >&2
+        echo "postinst called with zhangchunsheng argument \`$1'" >&2
         exit 1
     ;;
 esac
