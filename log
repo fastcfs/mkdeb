@@ -1,0 +1,159 @@
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: info: source package libfastcommon
+dpkg-buildpackage: info: source version 1.0.50-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by zhangchunsheng <zhangchunsheng423@gmail.com>
+dpkg-buildpackage: info: host architecture amd64
+ dpkg-source --before-build .
+ fakeroot debian/rules clean
+dh clean
+   dh_auto_clean
+        make -j4 clean
+make[1]: Entering directory '/home/fastcfs/git/libfastcommon-1.0.50/src'
+rm -f hash.o chain.o shared_func.o ini_file_reader.o logger.o sockopt.o base64.o sched_thread.o http_func.o md5.o pthread_func.o local_ip_func.o avl_tree.o
+ioevent.o ioevent_loop.o fast_task_queue.o fast_timer.o locked_timer.o process_ctrl.o fast_mblock.o connection_pool.o fast_mpool.o fast_allocator.o fast_buffer.o multi_skiplist.o flat_skiplist.o system_info.o fast_blocked_queue.o id_generator.o char_converter.o char_convert_loader.o common_blocked_queue.o multi_socket_client.o skiplist_set.o uniq_skiplist.o json_parser.o buffered_file_writer.o server_id_func.o fc_queue.o fc_memory.o shared_buffer.o thread_pool.o hash.lo chain.lo shared_func.lo ini_file_reader.lo logger.lo sockopt.lo base64.lo sched_thread.lo http_func.lo md5.lo pthread_func.lo local_ip_func.lo avl_tree.lo ioevent.lo ioevent_loop.lo fast_task_queue.lo fast_timer.lo locked_timer.lo process_ctrl.lo fast_mblock.lo connection_pool.lo fast_mpool.lo fast_allocator.lo fast_buffer.lo multi_skiplist.lo flat_skiplist.lo system_info.lo fast_blocked_queue.lo id_generator.lo char_converter.lo char_convert_loader.lo common_blocked_queue.lo multi_socket_client.lo skiplist_set.lo uniq_skiplist.lo json_parser.lo buffered_file_writer.lo server_id_func.lo fc_queue.lo fc_memory.lo shared_buffer.lo thread_pool.lo  libfastcommon.so libfastcommon.a
+make[1]: Leaving directory '/home/fastcfs/git/libfastcommon-1.0.50/src'
+   dh_clean
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+        make -j4 "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/home/fastcfs/git/libfastcommon-1.0.50/src'
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o hash.o hash.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o chain.o chain.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o shared_func.o shared_func.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o ini_file_reader.o ini_file_reader.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o logger.o logger.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o sockopt.o sockopt.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o base64.o base64.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o sched_thread.o sched_thread.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o http_func.o http_func.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o md5.o md5.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o pthread_func.o pthread_func.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o local_ip_func.o local_ip_func.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o avl_tree.o avl_tree.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o ioevent.o ioevent.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o ioevent_loop.o ioevent_loop.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o fast_task_queue.o fast_task_queue.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o fast_timer.o fast_timer.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o locked_timer.o locked_timer.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o process_ctrl.o process_ctrl.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o fast_mblock.o fast_mblock.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o connection_pool.o connection_pool.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o fast_mpool.o fast_mpool.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o fast_allocator.o fast_allocator.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o fast_buffer.o fast_buffer.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o multi_skiplist.o multi_skiplist.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o flat_skiplist.o flat_skiplist.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o system_info.o system_info.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o fast_blocked_queue.o fast_blocked_queue.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o id_generator.o id_generator.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o char_converter.o char_converter.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o char_convert_loader.o char_convert_loader.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o common_blocked_queue.o common_blocked_queue.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o multi_socket_client.o multi_socket_client.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o skiplist_set.o skiplist_set.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o uniq_skiplist.o uniq_skiplist.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o json_parser.o json_parser.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o buffered_file_writer.o buffered_file_writer.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o server_id_func.o server_id_func.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o fc_queue.o fc_queue.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o fc_memory.o fc_memory.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o shared_buffer.o shared_buffer.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -o thread_pool.o thread_pool.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o hash.lo hash.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o chain.lo chain.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o shared_func.lo shared_func.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o ini_file_reader.lo ini_file_reader.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o logger.lo logger.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o sockopt.lo sockopt.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o base64.lo base64.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o sched_thread.lo sched_thread.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o http_func.lo http_func.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o md5.lo md5.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o pthread_func.lo pthread_func.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o local_ip_func.lo local_ip_func.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o avl_tree.lo avl_tree.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o ioevent.lo ioevent.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o ioevent_loop.lo ioevent_loop.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o fast_task_queue.lo fast_task_queue.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o fast_timer.lo fast_timer.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o locked_timer.lo locked_timer.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o process_ctrl.lo process_ctrl.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o fast_mblock.lo fast_mblock.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o connection_pool.lo connection_pool.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o fast_mpool.lo fast_mpool.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o fast_allocator.lo fast_allocator.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o fast_buffer.lo fast_buffer.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o multi_skiplist.lo multi_skiplist.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o flat_skiplist.lo flat_skiplist.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o system_info.lo system_info.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o fast_blocked_queue.lo fast_blocked_queue.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o id_generator.lo id_generator.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o char_converter.lo char_converter.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o char_convert_loader.lo char_convert_loader.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o common_blocked_queue.lo common_blocked_queue.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o multi_socket_client.lo multi_socket_client.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o skiplist_set.lo skiplist_set.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o uniq_skiplist.lo uniq_skiplist.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o json_parser.lo json_parser.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o buffered_file_writer.lo buffered_file_writer.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o server_id_func.lo server_id_func.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o fc_queue.lo fc_queue.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o fc_memory.lo fc_memory.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o shared_buffer.lo shared_buffer.c
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -c -fPIC -o thread_pool.lo thread_pool.c
+ar rcs libfastcommon.a hash.o chain.o shared_func.o ini_file_reader.o logger.o sockopt.o base64.o sched_thread.o http_func.o md5.o pthread_func.o local_ip_func.o avl_tree.o ioevent.o ioevent_loop.o fast_task_queue.o fast_timer.o locked_timer.o process_ctrl.o fast_mblock.o connection_pool.o fast_mpool.o fast_allocator.o fast_buffer.o multi_skiplist.o flat_skiplist.o system_info.o fast_blocked_queue.o id_generator.o char_converter.o char_convert_loader.o common_blocked_queue.o multi_socket_client.o skiplist_set.o uniq_skiplist.o json_parser.o buffered_file_writer.o server_id_func.o fc_queue.o fc_memory.o shared_buffer.o thread_pool.o
+cc -Wall -Wformat-truncation=0 -Wformat-overflow=0 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -g -O3 -o libfastcommon.so -shared hash.lo chain.lo shared_func.lo ini_file_reader.lo logger.lo sockopt.lo base64.lo sched_thread.lo http_func.lo md5.lo pthread_func.lo local_ip_func.lo avl_tree.lo ioevent.lo ioevent_loop.lo fast_task_queue.lo fast_timer.lo locked_timer.lo process_ctrl.lo fast_mblock.lo connection_pool.lo fast_mpool.lo fast_allocator.lo fast_buffer.lo multi_skiplist.lo flat_skiplist.lo system_info.lo fast_blocked_queue.lo id_generator.lo char_converter.lo char_convert_loader.lo common_blocked_queue.lo multi_socket_client.lo skiplist_set.lo uniq_skiplist.lo json_parser.lo buffered_file_writer.lo server_id_func.lo fc_queue.lo fc_memory.lo shared_buffer.lo thread_pool.lo -lm -ldl
+make[1]: Leaving directory '/home/fastcfs/git/libfastcommon-1.0.50/src'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+        make -j4 install DESTDIR=/home/fastcfs/git/libfastcommon-1.0.50/src/debian/libfastcommon AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/home/fastcfs/git/libfastcommon-1.0.50/src'
+mkdir -p /usr/lib64
+mkdir -p /usr/lib
+mkdir -p /usr/include/fastcommon
+install -m 755 libfastcommon.so /usr/lib64
+install -m 644 common_define.h hash.h chain.h logger.h base64.h shared_func.h pthread_func.h ini_file_reader.h _os_define.h sockopt.h sched_thread.h http_func.h md5.h local_ip_func.h avl_tree.h ioevent.h ioevent_loop.h fast_task_queue.h fast_timer.h locked_timer.h process_ctrl.h fast_mblock.h connection_pool.h
+fast_mpool.h fast_allocator.h fast_buffer.h skiplist.h multi_skiplist.h flat_skiplist.h skiplist_common.h system_info.h fast_blocked_queue.h php7_ext_wrapper.h id_generator.h char_converter.h char_convert_loader.h common_blocked_queue.h multi_socket_client.h skiplist_set.h uniq_skiplist.h fc_list.h locked_list.h json_parser.h buffered_file_writer.h server_id_func.h fc_queue.h fc_memory.h shared_buffer.h thread_pool.h fc_atomic.h /usr/include/fastcommon
+make[1]: Leaving directory '/home/fastcfs/git/libfastcommon-1.0.50/src'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package libfastcommon: substitution variable ${shlibs:Depends} used, but is not defined
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'libfastcommon' in '../libfastcommon_1.0.50-1_amd64.deb'.
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../libfastcommon_1.0.50-1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ fakeroot debian/rules clean
+dh clean
+   dh_auto_clean
+        make -j4 clean
+make[1]: Entering directory '/home/fastcfs/git/libfastcommon-1.0.50/src'
+rm -f hash.o chain.o shared_func.o ini_file_reader.o logger.o sockopt.o base64.o sched_thread.o http_func.o md5.o pthread_func.o local_ip_func.o avl_tree.o
+ioevent.o ioevent_loop.o fast_task_queue.o fast_timer.o locked_timer.o process_ctrl.o fast_mblock.o connection_pool.o fast_mpool.o fast_allocator.o fast_buffer.o multi_skiplist.o flat_skiplist.o system_info.o fast_blocked_queue.o id_generator.o char_converter.o char_convert_loader.o common_blocked_queue.o multi_socket_client.o skiplist_set.o uniq_skiplist.o json_parser.o buffered_file_writer.o server_id_func.o fc_queue.o fc_memory.o shared_buffer.o thread_pool.o hash.lo chain.lo shared_func.lo ini_file_reader.lo logger.lo sockopt.lo base64.lo sched_thread.lo http_func.lo md5.lo pthread_func.lo local_ip_func.lo avl_tree.lo ioevent.lo ioevent_loop.lo fast_task_queue.lo fast_timer.lo locked_timer.lo process_ctrl.lo fast_mblock.lo connection_pool.lo fast_mpool.lo fast_allocator.lo fast_buffer.lo multi_skiplist.lo flat_skiplist.lo system_info.lo fast_blocked_queue.lo id_generator.lo char_converter.lo char_convert_loader.lo common_blocked_queue.lo multi_socket_client.lo skiplist_set.lo uniq_skiplist.lo json_parser.lo buffered_file_writer.lo server_id_func.lo fc_queue.lo fc_memory.lo shared_buffer.lo thread_pool.lo  libfastcommon.so libfastcommon.a
+make[1]: Leaving directory '/home/fastcfs/git/libfastcommon-1.0.50/src'
+   dh_clean
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
