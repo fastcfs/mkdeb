@@ -16,4 +16,5 @@ https://www.debian.org/doc/manuals/debian-faq/pkg-basics.zh-cn.html#:~:text=A%20
 https://unix.stackexchange.com/questions/592349/how-to-include-and-install-debian-package-timer-file-inside-deblan-package-alon#
 https://unix.stackexchange.com/questions/20554/how-to-include-data-files-pictures-text-files-in-a-debian-package
 https://linuxconfig.org/easy-way-to-create-a-debian-package-and-local-package-repository
+https://debian-handbook.info/browse/stable/sect.building-first-package.html
 ```
