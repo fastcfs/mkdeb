@@ -21,6 +21,8 @@ https://debian-handbook.info/browse/stable/sect.building-first-package.html
 https://packages.debian.org/stretch/amd64/lightning/filelist
 https://wiki.debian.org/Packaging/Intro
 https://wiki.debian.org/BuildingAPackage
+
+https://www.debian.org/doc/manuals/maint-guide/build.zh-cn.html
 ```
 
 ```shell script
