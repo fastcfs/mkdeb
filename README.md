@@ -51,6 +51,7 @@ https://wiki.debian.org/Packaging/Intro
 https://wiki.debian.org/BuildingAPackage
 https://stackoverflow.com/questions/37612776/override-dh-auto-install-doesnt-run-during-debuild
 
+https://www.debian.org/doc/manuals/maint-guide/dreq.zh-cn.html
 https://www.debian.org/doc/manuals/maint-guide/build.zh-cn.html
 https://manpages.debian.org/stretch/devscripts/debsign.1.en.html
 https://blog.packagecloud.io/eng/2014/10/28/howto-gpg-sign-verify-deb-packages-apt-repositories/
