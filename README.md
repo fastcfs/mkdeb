@@ -22,3 +22,7 @@ https://packages.debian.org/stretch/amd64/lightning/filelist
 https://wiki.debian.org/Packaging/Intro
 https://wiki.debian.org/BuildingAPackage
 ```
+
+```shell script
+https://mentors.debian.net/intro-maintainers/
+```
