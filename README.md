@@ -313,4 +313,25 @@ Examples:
  --fingerprint [names]      show fingerprints
 
 Please report bugs to <https://bugs.gnupg.org>.
+
+
+dput --help
+Usage: dput [options] [host] <package(s).changes>
+ Supported options (see man page for long forms):
+   -c: Config file to parse.
+   -d: Enable debug messages.
+   -D: Run dinstall after upload.
+   -e: Upload to a delayed queue. Takes an argument from 0 to 15.
+   -f: Force an upload.
+   -h: Display this help message.
+   -H: Display a list of hosts from the config file.
+   -l: Run lintian before upload.
+   -U: Do not write a .upload file after uploading.
+   -o: Only check the package.
+   -p: Print the configuration.
+   -P: Use passive mode for ftp uploads.
+   -s: Simulate the upload only.
+   -u: Don't check GnuPG signature.
+   -v: Display version information.
+   -V: Check the package version and then upload it.
 ```
