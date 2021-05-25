@@ -51,6 +51,7 @@ https://wiki.debian.org/Packaging/Intro
 https://wiki.debian.org/BuildingAPackage
 
 https://www.debian.org/doc/manuals/maint-guide/build.zh-cn.html
+https://manpages.debian.org/stretch/devscripts/debsign.1.en.html
 ```
 
 ```shell script
