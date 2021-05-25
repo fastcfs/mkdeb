@@ -1,6 +1,15 @@
 # mkdeb
 make deb package
 
+```
+清理源代码树(debian/rules clean)
+构建源代码包(dpkg-source -b)
+构建程序(debian/rules build)
+构建二进制包(fakeroot debian/rules binary)
+制作 .dsc 文件
+用 dpkg-genchanges 命令制作 .changes 文件。
+```
+
 ```shell script
 rpm -ql libfastcommon
 /usr/lib64/libfastcommon.so
