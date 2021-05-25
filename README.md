@@ -63,6 +63,8 @@ https://packages.debian.org/stretch/amd64/lightning/filelist
 https://wiki.debian.org/Packaging/Intro
 https://wiki.debian.org/BuildingAPackage
 https://stackoverflow.com/questions/37612776/override-dh-auto-install-doesnt-run-during-debuild
+https://www.debian.org/doc/debian-policy/
+https://www.debian.org/doc/manuals/developers-reference/
 
 https://www.debian.org/doc/manuals/maint-guide/dreq.zh-cn.html
 https://www.debian.org/doc/manuals/maint-guide/build.zh-cn.html
