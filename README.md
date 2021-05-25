@@ -52,6 +52,7 @@ https://wiki.debian.org/BuildingAPackage
 
 https://www.debian.org/doc/manuals/maint-guide/build.zh-cn.html
 https://manpages.debian.org/stretch/devscripts/debsign.1.en.html
+https://blog.packagecloud.io/eng/2014/10/28/howto-gpg-sign-verify-deb-packages-apt-repositories/
 ```
 
 ```shell script
