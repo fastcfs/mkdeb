@@ -1,3 +1,9 @@
+libfastcommon (1.0.50-2) unstable; urgency=medium
+
+  * Add dsc
+
+ -- zhangchunsheng <zhangchunsheng423@gmail.com>  Tue, 25 May 2021 14:18:01 +0800
+
 libfastcommon (1.0.50-1) unstable; urgency=medium
 
   * Initial release
