@@ -75,3 +75,12 @@ https://blog.packagecloud.io/eng/2014/10/28/howto-gpg-sign-verify-deb-packages-a
 ```shell script
 https://mentors.debian.net/intro-maintainers/
 ```
+
+```
+sudo yum install alien
+
+wget http://www.fastken.com/yumrepo/el7/x86_64/libfastcommon-1.0.52-1.el7.centos.x86_64.rpm
+
+alien --to-deb --scripts libfastcommon-1.0.52-1.el7.centos.x86_64.rpm
+sudo dpkg -i libfastcommon_1.0.52-2_amd64.deb
+```
